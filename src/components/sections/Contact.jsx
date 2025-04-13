@@ -134,7 +134,7 @@ const Contact = () => {
 
   return (
     <section
-      id="contact"
+      id="contacts"
       className="min-h-screen flex items-center justify-center py-20 relative"
     >
       {toast.message && (

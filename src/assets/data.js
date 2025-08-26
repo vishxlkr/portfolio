@@ -3,6 +3,7 @@ import pic1 from "../assets/pic2.jpg";
 import wanderlust from "../assets/wanderlust.png";
 import blog from "../assets/blog.png";
 import quickchat from "../assets/quickchat.png";
+import weather from "../assets/weather.png";
 
 export const projects = [
    {
@@ -39,6 +40,15 @@ export const projects = [
       ],
       githubLink: "https://github.com/vishxlkr/Wanderlust",
       demoLink: "https://wanderlust-b09w.onrender.com/listings",
+   },
+   {
+      title: "Weather App - Real-Time Weather Dashboard",
+      description:
+         "A modern React-based weather app providing real-time weather updates with city search, temperature, humidity, wind speed, and dynamic icons using OpenWeather API.",
+      image: weather,
+      techStack: ["React", "JS", "CSS3", "Tailwind", "OpenWeather API"],
+      githubLink: "https://github.com/vishxlkr/weather-app",
+      demoLink: "https://vishxlkr.github.io/weather-app/",
    },
 ];
 

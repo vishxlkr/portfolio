@@ -2,37 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import RevealOnScroll from "./RevealOnScroll";
 import pic1 from "../../assets/pic2.jpg";
-
-const projects = [
-   {
-      title: "Project One",
-      description:
-         "A modern web application that helps users track their daily tasks and manage time effectively.",
-      image: pic1, // Add your project images to public folder
-      techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      githubLink: "https://github.com/yourusername/project1",
-      demoLink: "https://project1-demo.com",
-   },
-   {
-      title: "Project One",
-      description:
-         "A modern web application that helps users track their daily tasks and manage time effectively.",
-      image: pic1, // Add your project images to public folder
-      techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      githubLink: "https://github.com/yourusername/project1",
-      demoLink: "https://project1-demo.com",
-   },
-   {
-      title: "Project One",
-      description:
-         "A modern web application that helps users track their daily tasks and manage time effectively.",
-      image: pic1, // Add your project images to public folder
-      techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      githubLink: "https://github.com/yourusername/project1",
-      demoLink: "https://project1-demo.com",
-   },
-   // Add more projects...
-];
+import { projects } from "../../assets/data";
 
 const ProjectCard = ({ project }) => {
    return (
@@ -80,14 +50,18 @@ const ProjectCard = ({ project }) => {
                >
                   GitHub
                </a>
-               <a
-                  href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-blue-500/50 text-blue-500 py-2 px-4 rounded-lg font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex-1 text-center"
-               >
-                  Live Demo
-               </a>
+               {project.demoLink ? (
+                  <a
+                     href={project.demoLink}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="border border-blue-500/50 text-blue-500 py-2 px-4 rounded-lg font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10 flex-1 text-center"
+                  >
+                     Website
+                  </a>
+               ) : (
+                  <></>
+               )}
             </div>
          </div>
       </motion.div>

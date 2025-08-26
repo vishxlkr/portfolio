@@ -105,6 +105,11 @@ export const frontendSkills = [
    "Tailwind CSS",
 ];
 
-export const backendSkills = ["Node.js", "Express.js", "Socket.io"];
+export const backendSkills = [
+   "Node.js",
+   "Express.js",
+   "Socket.io",
+   "Authentication",
+];
 
 export const databaseSkills = ["MongoDB", "PostgreSQL", "Databases"];

@@ -47,7 +47,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                      href="#contacts"
                      className="text-gray-300 hover:text-white transition-colors"
                   >
-                     Contacts
+                     Contact
                   </a>
                </div>
             </div>

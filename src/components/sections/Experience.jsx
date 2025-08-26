@@ -1,44 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import RevealOnScroll from "./RevealOnScroll";
-
-const educationData = [
-   {
-      degree: "B.Tech in Industrial Design",
-      institution: "NIT Rourkela",
-      duration: "2016 - 2020",
-      details: [
-         "Specialized in User Interface Design and Development",
-         "Relevant Coursework: Data Structures, Algorithms, Web Development",
-         "Final Year Project: Smart City Navigation System",
-      ],
-   },
-   // Add more education entries as needed
-];
-
-const experienceData = [
-   {
-      role: "Software Engineer",
-      company: "ABC Technologies",
-      duration: "2020 - Present",
-      details: [
-         "Developed and maintained microservices architecture",
-         "Led team of 4 developers for front-end development",
-         "Improved application performance by 40%",
-      ],
-   },
-   {
-      role: "Software Development Intern",
-      company: "DEF Startup",
-      duration: "2019",
-      details: [
-         "Built RESTful APIs using Node.js and Express",
-         "Implemented responsive UI components using React",
-         "Collaborated with design team for UI/UX improvements",
-      ],
-   },
-   // Add more experience entries as needed
-];
+import { educationData, experienceData } from "../../assets/data";
 
 const ExperienceCard = ({ title, items }) => {
    return (

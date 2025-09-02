@@ -4,6 +4,7 @@ import wanderlust from "../assets/wanderlust.png";
 import blog from "../assets/blog.png";
 import quickchat from "../assets/quickchat.png";
 import weather from "../assets/weather.png";
+import authentication from "../assets/authentication.png";
 
 export const projects = [
    {
@@ -49,6 +50,22 @@ export const projects = [
       techStack: ["React", "JS", "CSS3", "Tailwind", "OpenWeather API"],
       githubLink: "https://github.com/vishxlkr/weather-app",
       demoLink: "https://vishxlkr.github.io/weather-app/",
+   },
+   {
+      title: "Auth System with OTP Verification",
+      description:
+         "Full-stack auth system with signup, login, password reset, and OTP verification. Built with MERN, JWT, and Tailwind CSS, featuring a responsive UI with in-card loading indicators.",
+      image: authentication, // add your imported image
+      techStack: [
+         "MERN",
+         "JWT",
+         "Nodemailer",
+         "React",
+         "Tailwind CSS",
+         "MongoDB",
+      ],
+      githubLink: "https://github.com/vishxlkr/Authentication",
+      // demoLink: "https://authsystem-client.onrender.com/", // replace with your deployed demo link
    },
 ];
 

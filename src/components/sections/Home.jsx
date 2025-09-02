@@ -1,5 +1,6 @@
 import React from "react";
 import RevealOnScroll from "./RevealOnScroll";
+import { name, bio } from "../../assets/data";
 
 const Home = () => {
    return (
@@ -10,14 +11,17 @@ const Home = () => {
          <RevealOnScroll>
             <div className="text-center z-10 px-4">
                <h1 className="text-5xl md:text-7xl font-bol bg-gradient-to-r from-blue-500 to-red-600 bg-clip-text text-transparent mb-6 leading-right">
-                  Hi , I'm Vishal Kumar
+                  Hi , I'm {name}
                </h1>
 
-               <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto ">
+               {/* <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto ">
                   Hey! I’m a full-stack developer who enjoys solving real-world
                   problems through code. Whether it’s designing smooth
                   interfaces or optimizing backend logic, I love making things
                   that people actually enjoy using.
+               </p> */}
+               <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto ">
+                  {bio}
                </p>
 
                <div className="flex justify-center space-x-4 ">

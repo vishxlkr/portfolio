@@ -6,6 +6,11 @@ import quickchat from "../assets/quickchat.png";
 import weather from "../assets/weather.png";
 import authentication from "../assets/authentication.png";
 
+export const name = "Vishal Kumar";
+
+export const bio =
+   "Hey! I’m a full-stack developer who enjoys solving real-world problems through code. Whether it’s designing smooth interfaces or optimizing backend logic, I love making things that people actually enjoy using.";
+
 export const projects = [
    {
       title: "QuickChat - Real-Time Messaging App",
@@ -43,15 +48,6 @@ export const projects = [
       demoLink: "https://wanderlust-b09w.onrender.com/listings",
    },
    {
-      title: "Weather App - Real-Time Weather Dashboard",
-      description:
-         "A modern React-based weather app providing real-time weather updates with city search, temperature, humidity, wind speed, and dynamic icons using OpenWeather API.",
-      image: weather,
-      techStack: ["React", "JS", "CSS3", "Tailwind", "OpenWeather API"],
-      githubLink: "https://github.com/vishxlkr/weather-app",
-      demoLink: "https://vishxlkr.github.io/weather-app/",
-   },
-   {
       title: "Auth System with OTP Verification",
       description:
          "Full-stack auth system with signup, login, password reset, and OTP verification. Built with MERN, JWT, and Tailwind CSS, featuring a responsive UI with in-card loading indicators.",
@@ -66,6 +62,15 @@ export const projects = [
       ],
       githubLink: "https://github.com/vishxlkr/Authentication",
       // demoLink: "https://authsystem-client.onrender.com/", // replace with your deployed demo link
+   },
+   {
+      title: "Weather App - Real-Time Weather Dashboard",
+      description:
+         "A modern React-based weather app providing real-time weather updates with city search, temperature, humidity, wind speed, and dynamic icons using OpenWeather API.",
+      image: weather,
+      techStack: ["React", "JS", "CSS3", "Tailwind", "OpenWeather API"],
+      githubLink: "https://github.com/vishxlkr/weather-app",
+      demoLink: "https://vishxlkr.github.io/weather-app/",
    },
 ];
 
